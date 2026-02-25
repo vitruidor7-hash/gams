@@ -1835,7 +1835,7 @@ local function handleMenuKey(g, key)
                 local ng = loadSavedGame()
                 if ng then GAME.game = ng; GAME.scene = "world" end
             elseif s == "Close Menu" then closeMenu(g)
-            elseif s == "Quit to Title" then GAME.scene = "title" GAME.game = nil end
+            elseif s == "Quit to Title" then GAME.scene = "title"; GAME.game = nil end
             end
         end
     end
